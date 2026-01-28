@@ -3,7 +3,12 @@ package com.lgivhan.automation.pages;
 import org.springframework.stereotype.Component;
 
 @Component
-public class LoginPage {
-    public void navigateToApp() { System.out.println("Navigating..."); }
-    public void login(String u, String p) { System.out.println("Logging in..."); }
+public class LoginPage extends BasePage {
+
+    public void navigateToApp() {
+        driver.get("https://lgivhan.github.io/stock-tracker/");
+    }
+    public void login(String u, String p) {
+        System.out.println("Browser is open and at the URL");
+    }
 }
